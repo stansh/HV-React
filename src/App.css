@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.container Nav {
+  color: white;
+  font-family: oswald;
+  background-color: black;
+  
+  
+}
