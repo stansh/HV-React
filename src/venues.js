@@ -2,7 +2,7 @@ export const VENUES = [
     {
         id: 0,
         name: "Dakota",
-        image: "../images/dakota.png",
+        image: "/images/dakota.png", // the images folder needs to be in public folder
         phone:"(612) 332-1010",
         url:"https://www.dakotacooks.com",
         description: "The Dakota is a live music venue in Minneapolis and a rare gem in the Twin Cities entertainment scene. One of few establishments to serve a full, chef-driven menu paired with world-class music performances seven nights a week, the Dakota is more than a restaurant and more than a music club; it's where love of great food and great music come together as a seamless duet. In addition to being a nationally recognized Twin Cities live music institution for over 30 years, we offer a full service, critically acclaimed restaurant with special event options available for weddings of all sizes for lunch, dinner, and live entertainment."
@@ -10,7 +10,7 @@ export const VENUES = [
     {
         id: 1,
         name: "Aster Cafe",
-        image: "../images/astercafe.png",
+        image: "/images/aster.png",
         phone:"(612) 379-3138",
         url:"https://www.astercafe.com",
         description: "The Aster Cafe is located under the trees on the prettiest street in Minneapolis. Overlooking the mighty Mississippi river and the skyline of the city, the Aster is a candle-lit restaurant-bar with a sweet European patio. Live music, great brunches, craft beers and cocktails, and a thoughtful wine list add up to City Pages calling us the “best place to go on a first date”. Under Executive Chefs Drew Ledo, our menu is fresh (no deep fryers!) and inventive. We also have lovely spaces for events and weddings, which you can check out by contacting our Event Goddess. So get down here!"

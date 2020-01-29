@@ -29,7 +29,7 @@ class Navigation extends Component{
                         {/* <NavbarBrand className="mr-auto" href="/"><img src="/assets/images/logo.png" height="30" width="30" alt="NuCamp Logo" /></NavbarBrand> */}
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
-                            <Nav navbar>
+                            <Nav navbar  className = "justify-content-center">
                                 <NavItem>
                                     <NavLink className="nav-link" to="/home">
                                         <i className="fa fa-music fa-lg" /> VENUES

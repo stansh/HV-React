@@ -3,8 +3,9 @@ import { Navbar, NavbarBrand } from 'reactstrap';
 import logo from './logo.svg';
 import './App.css';
 import Navigation from './components/Navigation'
-import RenderVenue from './components/Directory'
+import Directory from './components/Directory'
 import { VENUES } from './venues';
+
 
 
 class App extends Component {
@@ -19,7 +20,7 @@ class App extends Component {
     return (
       <>
       <Navigation  />
-      <RenderVenue venue = {this.state.venues.map(venue=>venue.id)}/>
+      <Directory  venues={this.state.venues}  />
       </>
     );
   }
