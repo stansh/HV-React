@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,7 +35,7 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 /* .container Nav {
   color: white;
@@ -51,7 +51,7 @@
 .container Nav {
   background-color: #FFD459;
   font-family: 'Amatic SC', cursive;
-  font-size: xx-large;
+  font-size: 40px; 
   border-bottom-width: 10px;
   border-bottom-color: #002d62;
   
@@ -63,29 +63,34 @@ color:  #111111;
 }  
 
 .row {
-padding: 50px 0;
+padding: 20px 0;
   
   
 }
 
-body h3 {
+/* body h3 {
 
 font-family: 'Kalam', cursive;
 font-size:xx-large;
-}
+} */
 
 
-p {
+/* p {
+font-family: 'Sanchez', serif;
+} */
+
+.CardText{
 font-family: 'Sanchez', serif;
 }
 
-.card {
-font-family: 'Sanchez', serif;
-
-
+.CardTitle{
+  font-family: 'Kalam', cursive;
+  font-size:xx-large;
+ 
+  
 }
 
-#indexCard {
+.Card {
 
 border: dashed;
 

@@ -1,46 +1,45 @@
 import React, { Component, useState } from 'react';
-import { Media } from 'reactstrap';
+import {
+  Card, CardImg, CardText, CardBody, CardLink,
+  CardTitle, CardSubtitle,ListGroup, ListGroupItem 
+} from 'reactstrap';
 
-const HealthThing = () => {
+const HealthThing = (props) => {
   return (
-    <div className = 'container'>
-      <div className = 'raw'>
-        
-          <Media >
-            <div className ='col'>
-              <Media left middle href="#" >
-              <img src="images/pic21.jpg"  width="500" alt="Logo" />
-              </Media>
-            </div>
-            
-              <Media body  >
-                <Media heading>
-                  Top aligned media
-                </Media>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-              </Media>
-            
-          </Media>
-        </div>
-     
+    <div className='container'>
+       <div className='row'>
+          <div className='col-md'>   
+              <img width="100%" src="/images/pic21.jpg" alt="Card image cap" />
+          </div> 
+          <div className='col-md'>
+          <Card>
+            <CardBody className='col-md text-align-right'>
+                <CardTitle>Why hummus is great</CardTitle>
+                <CardText>Hummus is typically made by blending chickpeas (garbanzo beans), tahini (ground sesame seeds), olive oil, lemon juice and garlic in a food processor. Not only is hummus delicious, but it is also versatile, packed with nutrients and has been linked to many impressive health and nutritional benefits. Hummus provides a wide variety of vitamins and minerals. It is also a great plant-based source of protein, which makes it a nutritious option for vegans and vegetarians.</CardText>
+            </CardBody>
+          </Card>
+          </div>
+      </div>
 
-        <div className = 'raw'>
-        
-        <Media >
-          <div className ='col-md'>
-            <Media left middle href="#" >
-            <img src="images/pic21.jpg"  width="500" alt="Logo" />
-            </Media>
+      <div className='row'>
+          <div className='col-md'>   
+              <img width="100%" src="images/pic31.jpg" alt="Card image cap" />
+          </div> 
+          <div className='col-md'>
+          <Card>
+            <CardBody className='col-md text-align-right'>
+                <CardTitle>Why is it important to eat vegetablest</CardTitle>
+                <CardText>
+                  <ListGroup>
+                    <ListGroupItem>Most vegetables are naturally low in fat and calories. None have cholesterol. (Sauces or seasonings may add fat, calories, and/or cholesterol.)</ListGroupItem>
+                    <ListGroupItem>Vegetables are important sources of many nutrients, including potassium, dietary fiber, folate (folic acid), vitamin A, and vitamin C</ListGroupItem>
+                    <ListGroupItem>Diets rich in potassium may help to maintain healthy blood pressure. Vegetable sources of potassium include sweet potatoes, white potatoes, white beans, tomato products (paste, sauce, and juice), beet greens, soybeans, lima beans, spinach, lentils, and kidney beans.</ListGroupItem>
+                    
+                  </ListGroup>
+                </CardText>
+            </CardBody>
+          </Card>
           </div>
-          <div className ='col-md'>
-            <Media body  >
-              <Media heading>
-                Top aligned media
-              </Media>
-              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-            </Media>
-          </div>
-        </Media>
       </div>
     </div>
   );
