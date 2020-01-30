@@ -37,10 +37,125 @@
   }
 }
 
-.container Nav {
+/* .container Nav {
   color: white;
   font-family: oswald;
   background-color: black;
   
   
+} */
+
+/* Copied from Hummus and Veggies Bootstrap site: */
+
+
+.container Nav {
+  background-color: #FFD459;
+  font-family: 'Amatic SC', cursive;
+  font-size: xx-large;
+  border-bottom-width: 10px;
+  border-bottom-color: #002d62;
+  
+}
+
+strong  {
+color:  #111111;
+
+}  
+
+.row {
+padding: 50px 0;
+  
+  
+}
+
+body h3 {
+
+font-family: 'Kalam', cursive;
+font-size:xx-large;
+}
+
+
+p {
+font-family: 'Sanchez', serif;
+}
+
+.card {
+font-family: 'Sanchez', serif;
+
+
+}
+
+#indexCard {
+
+border: dashed;
+
+}
+
+.menuSegment {
+background-color:#0c8a42 ;
+}
+
+.active {
+background-color: #d6483c;
+}
+
+#foodCarousel {
+
+
+
+}
+
+.carousel-caption {
+background-color: #0c8a42;
+
+}
+
+.table {
+border: ;
+}
+
+.carousel {
+box-shadow: 0 4px 80px 0 rgba(0, 0, 0, 0.2) ;
+}
+
+.table {
+font-family: 'Sanchez', serif;
+}
+
+.prices {
+font-family: 'Kalam', cursive;
+font-size: x-large;
+}
+
+thead {
+
+}
+
+.modal-header {
+background-color: #0c8a42;
+}
+
+#navButton {
+background-color: #0c8a42;
+font-family:'Kalam', cursive;
+
+}
+
+body {
+
+}
+
+.card-title{
+background-color: #0c8a42;
+color: white;
+padding-left: 1rem;
+padding-top: 1rem ;
+padding-bottom:1rem ;
+
+}
+
+#headingOne, #headingTwo,#headingThree, #headingFour {
+background-color: #0c8a42;
+font-family:'Kalam', cursive;
+/* background-image: url("images/pic44.jpg"); */
 }

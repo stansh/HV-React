@@ -4,10 +4,11 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'typeface-oswald';
-import 'typeface-vollkorn';
+import 'typeface-kalam';
+import 'typeface-amatic-sc';
 import 'font-awesome/css/font-awesome.css';
 import 'bootstrap-social/bootstrap-social.css';
+
 
 
 ReactDOM.render(<App />, document.getElementById('root'));

@@ -18,6 +18,8 @@
     "react-scripts": "^3.3.0",
     "reactstrap": "^5.0.0",
     "redux": "^3.7.2",
+    "typeface-amatic-sc": "0.0.72",
+    "typeface-kalam": "0.0.72",
     "typeface-oswald": "^1.1.3",
     "typeface-vollkorn": "0.0.72"
   },
