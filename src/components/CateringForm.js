@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import {
-    Button, Label, Col, Row } from 'reactstrap';
+import { Button, Label, Col, Row } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import { Control, Form, Errors, } from 'react-redux-form';
+import { Control, LocalForm, Errors} from 'react-redux-form';
 
 const required = val => val && val.length;   
 const maxLength = len => val => !val || (val.length <= len);  
@@ -10,7 +9,7 @@ const minLength = len => val => val && (val.length >= len);
 const isNumber = val => !isNaN(+val);
 const validEmail = val => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val);
 
-class Catering extends Component {
+class CateringForm extends Component {
     constructor(props) {
         super(props);
 
@@ -45,8 +44,9 @@ render() {
         
     return (
 
-                <div className="col-md-10">
-                <Form  onSubmit={values => this.handleSubmit(values)}> {/* model="feedbackForm */}
+                <div className="container">
+                    <div className ='col-md-10'>
+                <LocalForm model="feedbackForm" onSubmit={values => this.handleSubmit(values)}> {/* model="feedbackForm */}
                         <Row className="form-group">
                             <Label htmlFor="firstName" md={2}>First Name</Label>
                             <Col md={10}>
@@ -183,7 +183,8 @@ render() {
                                 </Button>
                             </Col>
                         </Row>
-                    </Form>
+                    </LocalForm>
+                    </div>
                 </div>
          
     );
@@ -191,4 +192,4 @@ render() {
 }
 
 
-export default Catering;
+export default CateringForm;
