@@ -3,9 +3,9 @@ import { Table } from 'reactstrap';
 
 const Menu = (props) => {
   return (
-      <div classNameName = 'container '>
-            <Table responsive >
-            <tbody>
+      <div className = 'container' >
+            <Table >
+            <tbody >
 
               {/* Plates */}
                 <tr className="menuSegment text-white">
