@@ -34,8 +34,8 @@ class CateringForm extends Component {
 
 handleSubmit(values) {
     console.log('Current State is: ' + JSON.stringify(values));
-    // alert('Current State is: ' + JSON.stringify(values));
-    this.props.resetFeedbackForm();
+    alert('Current State is: ' + JSON.stringify(values));
+    // this.props.resetFeedbackForm();
 //     this.props.postFeedback();
 }
 

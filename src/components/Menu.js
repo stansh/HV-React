@@ -3,47 +3,75 @@ import { Table } from 'reactstrap';
 
 const Menu = (props) => {
   return (
-      <div className = 'container'>
-            <Table responsive>
-            <thead>
-                <tr>
-                <th></th>
-                <th></th>
-                <th>Small</th>
-                <th>Medium</th>
-                <th>Large</th>
-                <th>Table heading</th>
-                <th>Table heading</th>
-                </tr>
-            </thead>
+      <div classNameName = 'container '>
+            <Table responsive >
             <tbody>
-                <tr>
-                <th scope="row"></th>
-                <td>Plates</td>
-                <td>Table cell</td>
-                <td>Table cell</td>
-                <td>Table cell</td>
-                <td>Table cell</td>
-                <td>Table cell</td>
+
+              {/* Plates */}
+                <tr className="menuSegment text-white">
+                    <th><h4>Plates</h4></th>
+                    <th></th>
+                    <th></th>
                 </tr>
                 <tr>
-                <th scope="row"></th>
-                <td>Hummus</td>
-                <td>Table cell</td>
-                <td>Table cell</td>
-                <td>Table cell</td>
-                <td>Table cell</td>
-                <td>Table cell</td>
+                    <th>Small </th>
+                    <td>2 choices of hummus, 2 choices of veggies, 2 pitas  </td>
+                    <td className="prices">$ 6.99</td>
+                    
                 </tr>
                 <tr>
-                <th scope="row"></th>
-                <td>Juices</td>
-                <td>Table cell</td>
-                <td>Table cell</td>
-                <td>Table cell</td>
-                <td>Table cell</td>
-                <td>Table cell</td>
+                    <th>Medium</th>
+                    <td>3 choices of hummus, 4 choices of veggies, 3 pitas  </td>
+                    <td className="prices">$ 8.99</td>
+                    
                 </tr>
+                <tr>
+                    <th>Large</th>
+                    <td>5 choices of hummus, 5 choices of veggies, 5 pitas  </td>
+                    <td className="prices">$11.99</td>    
+                </tr>
+
+                {/* By Weight */}
+                <tr className="menuSegment text-white">
+                    <th><h4>By Weight</h4></th>
+                    <th></th>
+                    <th></th>
+                    
+                </tr>
+                <tr>
+                    <th>Hummus</th>
+                    <td>1 lb of of your favorite hummus  </td>
+                    <td className="prices">$7.99</td>
+                </tr>
+
+                {/* Juices */}
+                <tr>
+                    <th >Juices</th>
+                    <td>32 oz jar of fesh juice</td>
+                    <td className="prices">$12.99</td>
+                </tr>       
+                <tr className="menuSegment text-white">
+                    <th ><h4>Juices</h4></th>
+                    <th></th>
+                    <th></th>
+                    
+                </tr>
+                <tr>
+                    <th>Medium</th>
+                    <td></td>
+                    <td className="prices">$4.99</td>
+                </tr>
+                <tr>
+                    <th>Large</th>
+                    <td></td>
+                    <td className="prices">$6.99</td>
+                </tr>
+                <tr>
+                    <th>Virgin Bloody Mary</th>
+                    <td></td>
+                    <td className="prices">$7.99</td>
+                </tr>
+
             </tbody>
             </Table>
     </div>

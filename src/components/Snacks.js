@@ -7,8 +7,9 @@ import {
   CarouselCaption
 } from 'reactstrap';
 import Menu from './Menu';
+import {SNACKS} from '../shared/snacks';
 
-const items = [
+/* const items = [
   {
     src: 'images/CarPic23.png',
     altText: 'Hummus Flavors',
@@ -33,7 +34,8 @@ const items = [
     caption: 'Juice Selection',
     selection: 'carrot | tomato | orange | mango | apple '
   }
-];
+]; */
+const items = SNACKS;
 
 const Snacks = (props) => {
   const [activeIndex, setActiveIndex] = useState(0);
