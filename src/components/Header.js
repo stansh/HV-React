@@ -10,7 +10,8 @@ const Header = (props) => {
 
   return (
     <div className="container ">
-      <Navbar  sticky="top" expand="md" className="navbar-light">
+     
+      <Navbar  sticky="top" expand="md" className="navbar-light row">
         <NavbarBrand href="/" className="mr-auto"><img src="images/logo.png"  width="100" alt="Logo" /></NavbarBrand>
         <NavbarToggler onClick={toggleNavbar}   className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>
@@ -30,6 +31,7 @@ const Header = (props) => {
           </Nav>
         </Collapse>
       </Navbar>
+      
     </div>
   );
 }

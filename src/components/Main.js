@@ -1,10 +1,9 @@
-import React, { Component, useState } from 'react';
+import React, { Component} from 'react';
 import Header from './Header';
 import HealthThing from './HealthThing';
 import Snacks from './Snacks';
 import Recipes from './Recipes';
 import CateringForm from './CateringForm';
-import { connect } from 'react-redux';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 class Main extends Component {

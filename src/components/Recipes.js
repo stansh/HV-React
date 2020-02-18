@@ -7,7 +7,7 @@ const R1 = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
+    <div className = "row">
       <Button  outline color="success" size="lg" block onClick={toggle} style={{ marginBottom: '1rem' }}>Recipe #1</Button>
       <Collapse isOpen={isOpen}>
         <Card>
@@ -31,7 +31,7 @@ const R2 = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
+    <div className = "row">
       <Button outline color="success" size="lg" block  onClick={toggle} style={{ marginBottom: '1rem' }}>Recipe #2</Button>
       <Collapse isOpen={isOpen}>
         <Card>
@@ -57,7 +57,7 @@ const R3 = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
+    <div className = "row">
       <Button outline color="success" size="lg" block  onClick={toggle} style={{ marginBottom: '1rem' }}>Recipe #3</Button>
       <Collapse isOpen={isOpen}>
         <Card>
@@ -80,16 +80,16 @@ const R4 = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
+    <div className = "row">
       <Button outline color="success" size="lg" block  onClick={toggle} style={{ marginBottom: '1rem' }}>Recipe #4</Button>
       <Collapse isOpen={isOpen}>
         <Card>
           <CardBody>
               <ListGroup>
                    <ListGroupItem>Add all the ingredients to your Vitamix or high-powered blender and secure the lid. Remove the lid cap and insert the tamper</ListGroupItem>
-                    <ListGroupItem>Turn the blender on high for 30 seconds (or more for a creamier texture) and use the tamper to push the hummus into the blades. Add more chickpea liquid (aquafaba), if desired, for a softer hummus</ListGroupItem>>
-                    <ListGroupItem>Add the hummus to a serving plate and garnish with olive oil, paprika and fresh parsley.</ListGroupItem>>
-                    <ListGroupItem>The hummus will last for up to a week in the fridge, if kept in a sealed container. You can also freeze the hummus in sealed containers for future use, then just thaw as needed. It's actually one of the most common foods I meal prep on a regular basis as it's so easy</ListGroupItem>>
+                    <ListGroupItem>Turn the blender on high for 30 seconds (or more for a creamier texture) and use the tamper to push the hummus into the blades. Add more chickpea liquid (aquafaba), if desired, for a softer hummus</ListGroupItem>
+                    <ListGroupItem>Add the hummus to a serving plate and garnish with olive oil, paprika and fresh parsley.</ListGroupItem>
+                    <ListGroupItem>The hummus will last for up to a week in the fridge, if kept in a sealed container. You can also freeze the hummus in sealed containers for future use, then just thaw as needed. It's actually one of the most common foods I meal prep on a regular basis as it's so easy</ListGroupItem>
               </ListGroup>
           </CardBody>
         </Card>

@@ -3,11 +3,10 @@ import { Table } from 'reactstrap';
 
 const Menu = (props) => {
   return (
-      <div classNameName = 'container '>
-            <Table responsive >
+      <div className = 'container'>
+            <Table responsive  >
             <tbody>
 
-              {/* Plates */}
                 <tr className="menuSegment text-white">
                     <th><h4>Plates</h4></th>
                     <th></th>
@@ -36,13 +35,7 @@ const Menu = (props) => {
                     <th><h4>By Weight</h4></th>
                     <th></th>
                     <th></th>
-                    
-                </tr>
-                <tr>
-                    <th>Hummus</th>
-                    <td>1 lb of of your favorite hummus  </td>
-                    <td className="prices">$7.99</td>
-                </tr>
+                </tr> 
 
                 {/* Juices */}
                 <tr>
@@ -73,6 +66,7 @@ const Menu = (props) => {
                 </tr>
 
             </tbody>
+
             </Table>
     </div>
   );

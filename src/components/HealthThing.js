@@ -1,7 +1,7 @@
-import React, { Component, useState } from 'react';
+import React from 'react';
 import {
-  Card, CardImg, CardText, CardBody, CardLink,
-  CardTitle, CardSubtitle,ListGroup, ListGroupItem 
+  Card, CardText, CardBody,
+  CardTitle, ListGroup, ListGroupItem 
 } from 'reactstrap';
 
 const HealthThing = (props) => {
