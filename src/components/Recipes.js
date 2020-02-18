@@ -63,7 +63,7 @@ const R3 = (props) => {
         <Card>
           <CardBody>
               <ListGroup>
-                    <ListGroupItem>In the bowl of a food processor, combine the tahini and lemon juice and process for 1 minute, scrape the sides and bottom of the bowl then process for 30 seconds more</ListGroupItem>>
+                    <ListGroupItem>In the bowl of a food processor, combine the tahini and lemon juice and process for 1 minute, scrape the sides and bottom of the bowl then process for 30 seconds more</ListGroupItem>
                     <ListGroupItem>Add the olive oil, minced garlic, cumin, and a 1/2 teaspoon of salt to the whipped tahini and lemon juice</ListGroupItem>
                     <ListGroupItem>With the food processor turned on, slowly add 2 to 3 tablespoons of water until you reach the perfect consistency</ListGroupItem>
                     <ListGroupItem>Taste for salt and adjust as needed. Serve hummus with a drizzle of olive oil and dash of paprika</ListGroupItem>
