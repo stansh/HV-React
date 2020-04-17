@@ -7,7 +7,17 @@ import {
   CarouselCaption
 } from 'reactstrap';
 import Menu from './Menu';
-import {SNACKS} from '../shared/snacks';
+/* import {SNACKS} from '../shared/snacks'; */
+/* import { withRouter} from 'react-router-dom'; */
+import { connect } from 'react-redux';
+
+const mapStateToProps = state =>  {
+  return {
+    snacks: state.snacks 
+  };
+ 
+};
+
 
 /* const items = [
   {
@@ -35,9 +45,13 @@ import {SNACKS} from '../shared/snacks';
     selection: 'carrot | tomato | orange | mango | apple '
   }
 ]; */
-const items = SNACKS;
+
+
+/* const items = this.props.snacks; */
 
 const Snacks = (props) => {
+  
+  const items = props.snacks;
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
 
@@ -95,4 +109,4 @@ const Snacks = (props) => {
   );
 }
 
-export default Snacks;
+export default connect(mapStateToProps)(Snacks);
