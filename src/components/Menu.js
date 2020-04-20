@@ -2,6 +2,7 @@ import React from 'react';
 import {Table} from 'reactstrap';
 import { MENU } from '../shared/menu';
 import { connect } from 'react-redux';
+import { FadeTransform, Fade, Stagger } from 'react-animation-components';
 
 const mapStateToProps = state =>  {
     return {
@@ -12,26 +13,39 @@ const mapStateToProps = state =>  {
 
 
 
-
-
-
 function Menu () {
+    
+    
     const list = MENU.map(line =>{
+        
         return (
-            <div key ={line.id} className="container">
-                <Table className = "table table-striped">
-                    <tr>
-                    <td >{line.size}</td>
-                    <td >{line.description} </td>
-                    <td >{line.price}</td>
+            
+            <Fade in key ={line.id}>
+            <div>
+                
+                <Table className = 'table table-striped ' >
+                    <tbody className = 'text-center'>
+                    <tr className = 'row'>
+                    <td className = 'col'>{line.size}</td>
+                    <td className = 'col'>{line.description} </td>
+                    <td className = 'col'>{line.price}</td>
                     </tr>
+                    </tbody>
                 </Table>
+                
             </div>
+            </Fade>
+            
+           
         );
+       
+        
     });
 
     return (
-       <div>{list}</div>
+        
+       <div> <h3 className='text-center '>Our Menu</h3>{list}</div>
+       
     )
 }
 

@@ -1,8 +1,16 @@
 
 
 /* Copied from Hummus and Veggies Bootstrap site: */
+body {
+  background-image: linear-gradient(#fff, #aaa);
+
+}
 
 
+
+.container {
+  background-color: #eee;
+}
 .container Nav {
   background-color: #FFD459;
   font-family: 'Amatic SC', cursive;
@@ -53,10 +61,7 @@ font-family: 'Kalam', cursive;
 
 }
 
-.Table {
-font-family: 'Kalam', cursive;
 
-}
 
 
 .prices {
@@ -99,6 +104,12 @@ font-family:'Kalam', cursive;
 
 .container Button {
   font-family: 'Kalam', cursive;
+}
+
+Table{
+  font-family:'Kalam', cursive;
+  font-size: x-large;
+  
 }
 
 

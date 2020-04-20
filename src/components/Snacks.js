@@ -101,7 +101,7 @@ const Snacks = (props) => {
               <CarouselControl direction="next" directionText="Next" onClickHandler={next} />  
             </Carousel>
             </div>
-            <div className = 'row'>
+            <div >
               <Menu />
             </div>
         </div>
