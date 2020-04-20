@@ -1,10 +1,15 @@
-import { createStore } from 'redux';
-import { Reducer, initialState } from './reducer';
+import { createStore,combineReducers } from 'redux';
+import { snacksReducer} from './snacks_reducer';
+import { menuReducer } from './menu_reducer';
+
+
 
 export const ConfigureStore = () => {
     const store = createStore(
-        Reducer,
-        initialState
+        combineReducers({
+            snacks: snacksReducer,
+            menu: menuReducer
+            })
     );
 
     return store;

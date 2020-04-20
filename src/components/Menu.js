@@ -1,8 +1,46 @@
 import React from 'react';
 import {Table} from 'reactstrap';
+import { MENU } from '../shared/menu';
+import { connect } from 'react-redux';
+
+const mapStateToProps = state =>  {
+    return {
+      menu: state.menu 
+    };
+   
+  };
 
 
-const MENU = [
+
+
+
+
+function Menu () {
+    const list = MENU.map(line =>{
+        return (
+            <div key ={line.id} className="container">
+                <Table className = "table table-striped">
+                    <tr>
+                    <td >{line.size}</td>
+                    <td >{line.description} </td>
+                    <td >{line.price}</td>
+                    </tr>
+                </Table>
+            </div>
+        );
+    });
+
+    return (
+       <div>{list}</div>
+    )
+}
+
+
+
+
+export default connect(mapStateToProps)(Menu);
+
+/* const MENU = [
     {  
         id: 0,
         size: 'Small',
@@ -57,96 +95,4 @@ const MENU = [
     }
     
 
-];
-
-
-
-function Menu () {
-    const list = MENU.map(line =>{
-        return (
-            <div key ={line.id} className="container">
-                <Table className = "table table-striped">
-                    <tr>
-                    <td >{line.size}</td>
-                    <td >{line.description} </td>
-                    <td >{line.price}</td>
-                    </tr>
-                </Table>
-            </div>
-        );
-    });
-
-    return (
-       <div>{list}</div>
-    )
-}
-
-
-
-
-export default Menu;
-
-{/* <Table responsive  >
-<tbody>
-
-    <tr className="menuSegment text-white">
-        <th><h4>Plates</h4></th>
-        <th></th>
-        <th></th>
-    </tr>
-    <tr>
-        <th>Small </th>
-        <td>2 choices of hummus, 2 choices of veggies, 2 pitas  </td>
-        <td className="prices">$ 6.99</td>
-        
-    </tr>
-    <tr>
-        <th>Medium</th>
-        <td>3 choices of hummus, 4 choices of veggies, 3 pitas  </td>
-        <td className="prices">$ 8.99</td>
-        
-    </tr>
-    <tr>
-        <th>Large</th>
-        <td>5 choices of hummus, 5 choices of veggies, 5 pitas  </td>
-        <td className="prices">$11.99</td>    
-    </tr>
-
-    
-    <tr className="menuSegment text-white">
-        <th><h4>By Weight</h4></th>
-        <th></th>
-        <th></th>
-    </tr> 
-
-    
-    <tr>
-        <th >Juices</th>
-        <td>32 oz jar of fesh juice</td>
-        <td className="prices">$12.99</td>
-    </tr>       
-    <tr className="menuSegment text-white">
-        <th ><h4>Juices</h4></th>
-        <th></th>
-        <th></th>
-        
-    </tr>
-    <tr>
-        <th>Medium</th>
-        <td></td>
-        <td className="prices">$4.99</td>
-    </tr>
-    <tr>
-        <th>Large</th>
-        <td></td>
-        <td className="prices">$6.99</td>
-    </tr>
-    <tr>
-        <th>Virgin Bloody Mary</th>
-        <td></td>
-        <td className="prices">$7.99</td>
-    </tr>
-
-</tbody>
-
-</Table> */}
+]; */
