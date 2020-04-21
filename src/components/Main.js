@@ -4,6 +4,8 @@ import HealthThing from './HealthThing';
 import Snacks from './Snacks';
 import Recipes from './Recipes';
 import CateringForm from './CateringForm';
+import Footer from './Footer'
+
 import { Switch, Route, Redirect, withRouter} from 'react-router-dom';
 
 
@@ -25,10 +27,12 @@ class Main extends Component {
             <Route path='/healththing' component={HealthThing} />
             <Route path='/recipes' component={Recipes} />
             <Route path='/catering' component={CateringForm} />
+            
             <Redirect to='/healththing' />
             
 
          </Switch>
+         <Footer/>
         
          
         

@@ -21,7 +21,7 @@ function Menu () {
         return (
             
             <Fade in key ={line.id}>
-            <div>
+            <div >
                 
                 <Table className = 'table table-striped ' >
                     <tbody className = 'text-center'>
@@ -44,7 +44,7 @@ function Menu () {
 
     return (
         
-       <div> <h3 className='text-center '>Our Menu</h3>{list}</div>
+       <div > <h2 className='text-center'>Our Menu</h2>{list}</div>
        
     )
 }

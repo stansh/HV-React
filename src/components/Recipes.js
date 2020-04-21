@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Collapse, Button, CardBody, Card, ListGroupItem, ListGroup } from 'reactstrap';
+import { FadeTransform,Stagger,Fade } from 'react-animation-components';
+
 
 const R1 = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,20 +10,29 @@ const R1 = (props) => {
 
   return (
     <div className = "row">
+      
+               
       <Button  outline color="success" size="lg" block onClick={toggle} style={{ marginBottom: '1rem' }}>Recipe #1</Button>
       <Collapse isOpen={isOpen}>
-        <Card>
-          <CardBody>
-              <ListGroup>
-                  <ListGroupItem>Puree the first seven ingredients in a food processor until smooth</ListGroupItem>
-                  <ListGroupItem>Add in the chickpeas</ListGroupItem>
-                  <ListGroupItem>Puree for 3-4 minutes, or until smooth</ListGroupItem>
-                  <ListGroupItem>Taste and season</ListGroupItem>
-                  <ListGroupItem>Garnish and serve</ListGroupItem>
+      
+        <Card >
+        
+          <CardBody >
+              <ListGroup >
+                  <ListGroupItem>Start by prepping all of your ingredients: Drain 15½ oz. chickpeas in a strainer or colander and rinse thoroughly. Let drain again while you do the other prep.</ListGroupItem>
+                  <ListGroupItem>Cut 1 lemon in half, remove any visible seeds, and squeeze juice into a small bowl. You should have 3–4 Tbsp.</ListGroupItem>
+                  <ListGroupItem>Smash 1 garlic clove with the flat side of your knife on a cutting board and remove peel. Continue to mash with side of knife until a paste forms. (You can also grate garlic on a microplane if you have one—you're just looking for a fine paste.)</ListGroupItem>
+                  <ListGroupItem>Combine drained chickpeas, 3 Tbsp. lemon juice, garlic, ½ cup tahini, ¾ tsp. salt, 10 cracks pepper, ¼ tsp. cumin, and 2 Tbsp. water in a food processor.</ListGroupItem>
+                  <ListGroupItem>Process until smooth, about 1 minute.With the motor running, stream in 3 Tbsp. oil, then continue to process until hummus is very light and creamy, about 1 minute longer. Taste and season with more salt, if needed.</ListGroupItem>
               </ListGroup>
+              
           </CardBody>
+          
         </Card>
+       
+              
       </Collapse>
+        
     </div>
   );
 }
@@ -37,11 +48,11 @@ const R2 = (props) => {
         <Card>
           <CardBody>
               <ListGroup>
-                    <ListGroupItem>Place the chickpeas in a medium saucepan and add the baking soda</ListGroupItem>
-                    <ListGroupItem>Add the tahini to the food processor and blend until the mixture is thick and creamy</ListGroupItem>
-                    <ListGroupItem>While running the food processor, drizzle in 2 tablespoons ice water </ListGroupItem>
-                    <ListGroupItem>Add the cumin and the drained, over-cooked chickpeas to the food processor</ListGroupItem>
-                    <ListGroupItem>Taste, and adjust as necessary</ListGroupItem>
+                    <ListGroupItem>Add the chickpeas to your blender and make sure to reserve the liquid (it’s called aquafaba). If you forget and accidentally toss it, no worries, just use water.</ListGroupItem>
+                    <ListGroupItem>Add the tahini (which I also make in my Vitamix), olive oil, fresh lemons, garlic, cumin and salt to the blender. Use two garlic cloves for your basic hummus, but if you’re a garlic lover like me, feel free to add more. Roasted garlic is also divine.</ListGroupItem>
+                    <ListGroupItem>Turn your Vitamix on high and use the tamper as you would when making almond butter to push the ingredients into the blades. After 30 seconds, it should be fully blended. </ListGroupItem>
+                    <ListGroupItem>Your hummus will be thick, creamy and smooth. If you’d like a thinner consistency, just add a bit more aquafaba or water until it’s your desired consistency.</ListGroupItem>
+                    <ListGroupItem>To serve, add a few large, heaping spoonfuls to a plate or bowl and give it a swish depression on top. This creates a little divot for your olive oil to stay in. Then sprinkle some paprika and add fresh parsley</ListGroupItem>
                     <ListGroupItem>Scrape the hummus into a serving bowl or platter, and use a spoon to create nice swooshes on top</ListGroupItem>
               </ListGroup>
           </CardBody>
@@ -100,16 +111,42 @@ const R4 = (props) => {
 
 
 
-const Recipes = () =>{
+const Recipes = () => {
   return(
     <div className ='container'>
+      <FadeTransform
+            in
+            transformProps={{
+                exitTransform: 'scale(1) translateY(-100%)'
+            }}>
+       <div className='row'>
+       <div className='col-md-4'>
+          <img width="100%" src="/images/pic30.jpg" alt="Card image cap"className='rounded'/>
+        </div>
+         <div className='col'>
       
-      <R1 />
-      <R2 />
-      <R3 />
-      <R4 />
+             
+            <R1 />
+            <R2 />
+            <R3 />
+            <R4 />
+            
+     
+       </div>
+      
+        
+       
+      </div>
+
+      </FadeTransform>
       
     </div>
+    
+    
+        
+                
+    
+   
   );
 }
 

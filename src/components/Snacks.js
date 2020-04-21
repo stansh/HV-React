@@ -10,6 +10,8 @@ import Menu from './Menu';
 /* import {SNACKS} from '../shared/snacks'; */
 /* import { withRouter} from 'react-router-dom'; */
 import { connect } from 'react-redux';
+import { FadeTransform,Stagger } from 'react-animation-components';
+
 
 const mapStateToProps = state =>  {
   return {
@@ -19,35 +21,6 @@ const mapStateToProps = state =>  {
 };
 
 
-/* const items = [
-  {
-    src: 'images/CarPic23.png',
-    altText: 'Hummus Flavors',
-    caption: 'Hummus Flavors',
-    selection: 'classic | red pepper | basil pesto | roasted garlic | lemon'
-  },
-  {
-    src: 'images/CarPic47.png',
-    altText: 'Veggies Selection',
-    caption: 'Veggies Selection',
-    selection: 'cucumbers | peppers | carrots | celery | broccoli'
-  },
-  {
-    src: 'images/CarPic28.png',
-    altText: 'Pitas Flavors',
-    caption: 'Pitas Flavors',
-    selection: 'whole wheat | pita chips | pita with cheese '
-  },
-  {
-    src: 'images/CarPic33.png',
-    altText: 'Juice Selection',
-    caption: 'Juice Selection',
-    selection: 'carrot | tomato | orange | mango | apple '
-  }
-]; */
-
-
-/* const items = this.props.snacks; */
 
 const Snacks = (props) => {
   
@@ -75,7 +48,7 @@ const Snacks = (props) => {
   const slides = items.map((item) => {
     return (
       
-      <CarouselItem
+      <CarouselItem 
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
         key={item.src}
@@ -89,6 +62,11 @@ const Snacks = (props) => {
 
   return (
         <div className = 'container'>
+          <FadeTransform
+            in
+            transformProps={{
+                exitTransform: 'scale(1) translateY(-50%)'
+            }}>
           <div className = 'row'>
             <Carousel
               activeIndex={activeIndex}
@@ -97,13 +75,21 @@ const Snacks = (props) => {
             >
               <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
               {slides}
-              <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
+              <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous}  />
               <CarouselControl direction="next" directionText="Next" onClickHandler={next} />  
             </Carousel>
             </div>
+            </FadeTransform>
             <div >
+            <FadeTransform
+            in
+            transformProps={{
+                exitTransform: 'scale(1) translateY(50%)'
+            }}>
               <Menu />
+              </FadeTransform>
             </div>
+            
         </div>
      
   );
