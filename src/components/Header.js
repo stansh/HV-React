@@ -12,7 +12,7 @@ const Header = (props) => {
     
      
       <Navbar  sticky="top" expand="md" className="navbar-light ">
-        <NavbarBrand href="/" className="ml-auto"><img src="HV-React/images/logo.png"  width="100" alt="Logo" /></NavbarBrand>
+        <NavbarBrand href="/" className="ml-auto"><img src="images/logo.png"  width="100" alt="Logo" /></NavbarBrand>
         <NavbarToggler onClick={toggleNavbar}   className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar className="mr-auto">
