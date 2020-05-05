@@ -193,7 +193,7 @@ render() {
                             </LocalForm>
                         </div>
                         <div className='col-md-6'>
-                        <img width="90%" src="/images/pic44.jpg" alt="Card image cap" className='rounded'/>
+                        <img width="90%" src="HV-React/images/pic44.jpg" alt="Card image cap" className='rounded'/>
                         </div>
                         </div>
                     </FadeTransform>

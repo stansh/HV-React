@@ -23,12 +23,12 @@ function Menu () {
             <Fade in key ={line.id}>
             <div >
                 
-                <Table className = 'table table-striped ' >
+                <Table  hover >
                     <tbody className = 'text-center'>
                     <tr className = 'row'>
-                    <td className = 'col'>{line.size}</td>
-                    <td className = 'col'>{line.description} </td>
-                    <td className = 'col'>{line.price}</td>
+                    <td className = 'col text-white'>{line.size}</td>
+                    <td className = 'col text-white '>{line.description} </td>
+                    <td className = 'col text-white'>{line.price}</td>
                     </tr>
                     </tbody>
                 </Table>

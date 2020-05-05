@@ -14,10 +14,10 @@ const HealthThing = (props) => {
             transformProps={{
                 exitTransform: 'scale(1) translateX(-10%)'
             }}>
-            <div className='row'>
+            <div className='row my-2'>
             
                 <div className='col-md '>   
-                    <img width="100%" src="/images/pic21.jpg" alt="Card image cap" className='rounded'/>
+                    <img width="100%" src="HV-React/images/pic21.jpg" alt="Card image cap" className='rounded'/>
                 </div> 
                 
                 
@@ -25,7 +25,7 @@ const HealthThing = (props) => {
                 <div className='col-md'>
                 <Card>
                     <CardBody className='col-md text-align-right'>
-                        <CardTitle>Why hummus is great</CardTitle>
+                        <CardTitle>Why hummus is great?</CardTitle>
                         <CardText>Hummus is typically made by blending chickpeas (garbanzo beans), tahini (ground sesame seeds), olive oil, lemon juice and garlic in a food processor. Not only is hummus delicious, but it is also versatile, packed with nutrients and has been linked to many impressive health and nutritional benefits. Hummus provides a wide variety of vitamins and minerals. It is also a great plant-based source of protein, which makes it a nutritious option for vegans and vegetarians.</CardText>
                     </CardBody>
                 </Card>
@@ -41,12 +41,12 @@ const HealthThing = (props) => {
                 
             <div className='row'>
                 <div className='col-md'>   
-                    <img width="100%" src="images/pic31.jpg" alt="Card image cap" className='rounded' />
+                    <img width="100%" src="HV-React/images/pic31.jpg" alt="Card image cap" className='rounded' />
                 </div> 
                 <div className='col-md'>
                 <Card>
                     <CardBody className='col-md text-align-right'>
-                        <CardTitle>Why is it important to eat vegetables</CardTitle>
+                        <CardTitle>Why is it important to eat vegetables?</CardTitle>
                         <CardText>
                         <ListGroup>
                             <ListGroupItem>Most vegetables are naturally low in fat and calories. None have cholesterol. (Sauces or seasonings may add fat, calories, and/or cholesterol.)</ListGroupItem>

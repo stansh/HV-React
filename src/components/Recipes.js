@@ -121,7 +121,7 @@ const Recipes = () => {
             }}>
        <div className='row'>
        <div className='col-md-4'>
-          <img width="100%" src="/images/pic30.jpg" alt="Card image cap"className='rounded'/>
+          <img width="100%" src="HV-React/images/pic30.jpg" alt="Card image cap"className='rounded'/>
         </div>
          <div className='col'>
       
