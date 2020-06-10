@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/healththing/static/css/main.52ec319e.chunk.css",
-    "main.js": "/healththing/static/js/main.ea413643.chunk.js",
-    "main.js.map": "/healththing/static/js/main.ea413643.chunk.js.map",
-    "runtime-main.js": "/healththing/static/js/runtime-main.072c13ec.js",
-    "runtime-main.js.map": "/healththing/static/js/runtime-main.072c13ec.js.map",
-    "static/css/2.e166213b.chunk.css": "/healththing/static/css/2.e166213b.chunk.css",
-    "static/js/2.f5cdcfb3.chunk.js": "/healththing/static/js/2.f5cdcfb3.chunk.js",
-    "static/js/2.f5cdcfb3.chunk.js.map": "/healththing/static/js/2.f5cdcfb3.chunk.js.map",
-    "index.html": "/healththing/index.html",
-    "precache-manifest.464c27c86247486dcb78b365323b4d2e.js": "/healththing/precache-manifest.464c27c86247486dcb78b365323b4d2e.js",
-    "service-worker.js": "/healththing/service-worker.js",
-    "static/css/2.e166213b.chunk.css.map": "/healththing/static/css/2.e166213b.chunk.css.map",
-    "static/css/main.52ec319e.chunk.css.map": "/healththing/static/css/main.52ec319e.chunk.css.map",
-    "static/js/2.f5cdcfb3.chunk.js.LICENSE.txt": "/healththing/static/js/2.f5cdcfb3.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/healththing/static/media/kalam-latin-700.dcaa2d3f.woff2",
-    "static/media/font-awesome.css": "/healththing/static/media/fontawesome-webfont.fee66e71.woff"
+    "main.css": "/HV-React/static/css/main.52ec319e.chunk.css",
+    "main.js": "/HV-React/static/js/main.a05d291c.chunk.js",
+    "main.js.map": "/HV-React/static/js/main.a05d291c.chunk.js.map",
+    "runtime-main.js": "/HV-React/static/js/runtime-main.e33d781b.js",
+    "runtime-main.js.map": "/HV-React/static/js/runtime-main.e33d781b.js.map",
+    "static/css/2.9e8f2e25.chunk.css": "/HV-React/static/css/2.9e8f2e25.chunk.css",
+    "static/js/2.f5cdcfb3.chunk.js": "/HV-React/static/js/2.f5cdcfb3.chunk.js",
+    "static/js/2.f5cdcfb3.chunk.js.map": "/HV-React/static/js/2.f5cdcfb3.chunk.js.map",
+    "index.html": "/HV-React/index.html",
+    "precache-manifest.357b04fe3f1dd2e86be2e0ce8dc5433b.js": "/HV-React/precache-manifest.357b04fe3f1dd2e86be2e0ce8dc5433b.js",
+    "service-worker.js": "/HV-React/service-worker.js",
+    "static/css/2.9e8f2e25.chunk.css.map": "/HV-React/static/css/2.9e8f2e25.chunk.css.map",
+    "static/css/main.52ec319e.chunk.css.map": "/HV-React/static/css/main.52ec319e.chunk.css.map",
+    "static/js/2.f5cdcfb3.chunk.js.LICENSE.txt": "/HV-React/static/js/2.f5cdcfb3.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/HV-React/static/media/kalam-latin-700.dcaa2d3f.woff2",
+    "static/media/font-awesome.css": "/HV-React/static/media/fontawesome-webfont.fee66e71.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.072c13ec.js",
-    "static/css/2.e166213b.chunk.css",
+    "static/js/runtime-main.e33d781b.js",
+    "static/css/2.9e8f2e25.chunk.css",
     "static/js/2.f5cdcfb3.chunk.js",
     "static/css/main.52ec319e.chunk.css",
-    "static/js/main.ea413643.chunk.js"
+    "static/js/main.a05d291c.chunk.js"
   ]
 }
